@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação de Financiamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="conteiner">
+    <h1>Simulação de Financiamento</h1>
+    <form id="form-financiamento">
+      <label for="valor">Valor do Financiamento (R$):</label>
+      <input type="number" id="valor" value="200000">
+
+      <label for="prazo">Prazo (anos):</label>
+      <input type="number" id="prazo" value="20">
+
+      <label for="juros">Juros ao Ano (%):</label>
+      <input type="number" id="juros" value="8">
+
+      <button type="button" onclick="simular()">Simular</button>
+    </form>
+
+    <div id="resultados">
+      <h2>Resultados:</h2>
+      <p id="prazo-meses">Prazo (meses): </p>
+      <p id="juros-mensais">Juros ao mês: </p>
+      <p id="juros-acumulados">Juros acumulados: </p>
+      <table id="tabela-prestacoes">
+        <thead>
+          <tr>
+            <th>Mês</th>
+            <th>Amortização</th>
+            <th>Juros</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </div> 
+</body>
